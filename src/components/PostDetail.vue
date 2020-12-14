@@ -1,9 +1,9 @@
 <template>
   <div class="container-fluid pt-5">
-    <h1 class="text-center">Yazı Listesi</h1>
     <hr>
       <div class="d-flex flex-wrap flex-row justify-content-center align-items-center">
         <div v-for="post in postList" :key="post.title" class="card m-1">
+          <h1 class="text-center">{{ post.title }}</h1>
           <img class="card-img-top" :src="post.title" :alt="post.title">
           <div class="card-body">
             <h5 class="card-title"> {{ post.title }}</h5>
